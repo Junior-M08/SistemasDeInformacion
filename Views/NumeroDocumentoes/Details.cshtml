@@ -1,0 +1,31 @@
+﻿@model SistemasDeInformacioinMVC.NumeroDocumento
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<body style="background-color:skyblue;">
+</body>
+<div>
+    <h4>NumeroDocumento</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UltimoNumero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UltimoNumero)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaRegistro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaRegistro)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdNumeroDocumento">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
